@@ -14,7 +14,11 @@ function App() {
   };
 
   const calcuEqual = () => {
-    setInput(evaluate(input));
+    if (input) {
+      setInput(evaluate(input));
+    } else {
+      alert('Error: No se ha ingresado ningún valor');
+    }
   };
   
 
